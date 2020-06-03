@@ -1,16 +1,20 @@
 :root {
-  --filter-text-color-main: #fff;
+  --filter-text-color-main: invert(50%) sepia(50%) saturate(10000%)
+    hue-rotate(185deg) drop-shadow(2px 2px 2px black);
   --filter-text-color-secondary: orange;
+  --color-background: rgb(218, 236, 243);
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--color-background);
 }
 
 .container-style {
   border: 1px solid purple;
   display: grid;
+  grid-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 3fr;
   grid-template-areas:
@@ -24,6 +28,10 @@ body {
   justify-items: space-around;
 
   text-align: center;
+}
+
+.character-png {
+  filter: var(--filter-text-color-main);
 }
 
 .header-style {
@@ -44,6 +52,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.year-style .character-png {
+  /* border: 1px solid blue; */
+  margin: 15px;
+  transform: scale(1.5);
 }
 
 .month-style {
@@ -81,11 +95,13 @@ body {
 .image-poster {
   grid-area: poster;
   background: url(../img/Anakin-Thrawn.jpg) center no-repeat;
+
+  /* background-color: rgb(53, 38, 29); */
 }
 
 @media only screen and (max-width: 800px) {
   body {
-    background-color: gray;
+    background-color: whitesmoke;
   }
 
   .container-style {
@@ -104,4 +120,56 @@ body {
     height: 80vh;
     background: url(../img/Vader-Thrawn.jpg) center no-repeat;
   }
+}
+
+/* Numbers */
+#zero {
+  width: 30px;
+  height: 30px;
+  background: url(../img/StarWars.png) -10px -275px;
+}
+#one {
+  width: 30px;
+  height: 30px;
+  background: url(../img/StarWars.png) -60px -275px;
+}
+#two {
+  width: 30px;
+  height: 30px;
+  background: url(../img/StarWars.png) -113px -275px;
+}
+#three {
+  width: 30px;
+  height: 30px;
+  background: url(../img/StarWars.png) -165px -275px;
+}
+#four {
+  width: 30px;
+  height: 30px;
+  background: url(../img/StarWars.png) -219px -275px;
+}
+#five {
+  width: 30px;
+  height: 30px;
+  background: url(../img/StarWars.png) -270px -275px;
+}
+#six {
+  width: 30px;
+  height: 30px;
+  background: url(../img/StarWars.png) -323px -275px;
+}
+#seven {
+  width: 30px;
+  height: 30px;
+  background: url(../img/StarWars.png) -375px -275px;
+}
+#eight {
+  width: 30px;
+  height: 30px;
+  background: url(../img/StarWars.png) -428px -275px;
+}
+#nine {
+  width: 30px;
+  height: 30px;
+  background: url(../img/StarWars.png) -480px -275px;
 }
