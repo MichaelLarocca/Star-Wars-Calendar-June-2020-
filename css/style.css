@@ -1,6 +1,7 @@
 :root {
   --filter-text-color-main: invert(5%) sepia(50%) saturate(0%) hue-rotate(0deg)
-    drop-shadow(2px 2px 2px var(--color-background));
+    /* drop-shadow(2px 2px 2px var(--color-background)); */
+    drop-shadow(2px 2px 2px var(--color-border));
 
   --filter-text-color-secondary: orange;
   --color-parent-background: #84aabc;
@@ -22,7 +23,8 @@ body {
 .container-style {
   /* border: 1px solid var(--color-border); */
   border-radius: 5px;
-  background-color: var(--color-parent-background);
+  /* background-color: var(--color-parent-background); */
+  background-color: whitesmoke;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -155,11 +157,13 @@ body {
 }
 
 .image-poster {
-  /* border-left: 1px solid whitesmoke; */
-  box-shadow: -13px -13px 30px whitesmoke, 13px 13px 30px var(--color-border);
-  background-color: none;
+  /* border-left: 1px solid red; */
+  border: 3px solid var(--color-border);
+  border-radius: -25px;
+  box-shadow: -13px -13px 30px white, 13px 13px 30px var(--color-border);
+  background-color: var(--color-border) !important;
   grid-area: poster;
-  background: url(../img/Anakin-Thrawn.jpg) center no-repeat;
+  background: url(../img/Anakin-Thrawn.jpg) center top no-repeat;
 }
 
 @media only screen and (max-width: 800px) {
