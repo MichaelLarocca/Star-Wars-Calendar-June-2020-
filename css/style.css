@@ -2,7 +2,6 @@
   --filter-text-color-main: invert(5%) sepia(50%) saturate(0%) hue-rotate(0deg)
     /* drop-shadow(2px 2px 2px var(--color-background)); */
     drop-shadow(2px 2px 2px var(--color-border));
-
   --filter-text-color-secondary: orange;
   /* --color-parent-background: #84aabc; */
   --color-parent-background: rgb(88, 136, 165);
